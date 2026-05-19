@@ -1,6 +1,6 @@
 ---
 title: Welcome to Labor YIMBY
-date: 2026-05-20
+date: 2026-05-19
 author: Labor YIMBY
 excerpt: We're building a movement of Labor Party members who believe in abundant housing for all.
 ---
