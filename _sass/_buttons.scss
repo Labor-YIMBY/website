@@ -1,0 +1,51 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  padding: 0.8rem 1.8rem;
+  font-family: $font-sans;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all $transition;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.btn-primary {
+  background: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background: $color-primary-dark;
+    color: $color-white;
+  }
+}
+
+.btn-secondary {
+  background: rgba($color-white, 0.1);
+  color: $color-white;
+  border: 1px solid rgba($color-white, 0.2);
+
+  &:hover {
+    background: rgba($color-white, 0.15);
+    color: $color-white;
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    background: $color-primary;
+    color: $color-white;
+  }
+}

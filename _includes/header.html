@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ "/" | relative_url }}" class="site-logo">
+      <span class="logo-icon"><svg width="3rem" height="3rem" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4 L5 13 L8 13 L8 17 L16 17 L16 13 L19 13 Z"/></svg></span>
+      <span class="logo-text">Labor <strong>YIMBY</strong></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="{{ "/" | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+      <a href="{{ "/about/" | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>About</a>
+      <a href="{{ "/articles/" | relative_url }}"{% if page.url == '/articles/' %} class="active"{% endif %}>Articles</a>
+      <a href="{{ "/faq/" | relative_url }}"{% if page.url == '/faq/' %} class="active"{% endif %}>FAQ</a>
+      <a href="{{ "/join/" | relative_url }}" class="nav-cta{% if page.url == '/join/' %} active{% endif %}">Join</a>
+      <a href="{{ "/contact/" | relative_url }}"{% if page.url == '/contact/' %} class="active"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>

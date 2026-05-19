@@ -1,0 +1,125 @@
+.page-content {
+  padding: $spacing-2xl 0 $spacing-xl;
+  margin-top: 68px;
+
+  .container {
+    max-width: $container-narrow;
+  }
+
+  h1 {
+    margin-bottom: $spacing-lg;
+  }
+
+  h2 {
+    margin-top: $spacing-xl;
+    padding-bottom: $spacing-xs;
+    border-bottom: 1px solid $color-border;
+  }
+
+  h3 {
+    margin-top: $spacing-lg;
+  }
+
+  p, li {
+    font-size: $font-size-lg;
+    line-height: 1.8;
+    color: lighten($color-text, 5%);
+  }
+
+  ul, ol {
+    margin-bottom: $spacing-sm;
+  }
+
+  li {
+    margin-bottom: $spacing-xs;
+  }
+
+  blockquote {
+    margin: $spacing-md 0;
+    padding: $spacing-md $spacing-lg;
+    background: $color-bg-alt;
+    border-left: 4px solid $color-primary;
+    border-radius: 0 $radius-sm $radius-sm 0;
+
+    p {
+      margin: 0;
+      font-style: italic;
+    }
+  }
+}
+
+// Contact page specific
+.contact-section {
+  padding: $spacing-xl 0 $spacing-2xl;
+  margin-top: 68px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+  align-items: start;
+}
+
+.contact-form {
+  .form-group {
+    margin-bottom: $spacing-md;
+  }
+
+  label {
+    display: block;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    margin-bottom: $spacing-xs;
+    color: $color-secondary;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: $font-sans;
+    font-size: $font-size-base;
+    border: 1px solid $color-border;
+    border-radius: $radius-sm;
+    background: $color-white;
+    color: $color-text;
+    transition: border-color $transition;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 3px rgba($color-primary, 0.1);
+    }
+  }
+
+  textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+}
+
+.contact-info {
+  .contact-card {
+    background: $color-bg-alt;
+    border-radius: $radius-md;
+    padding: $spacing-md;
+    margin-bottom: $spacing-md;
+
+    h3 {
+      font-size: $font-size-base;
+      margin-bottom: $spacing-xs;
+    }
+
+    p {
+      font-size: $font-size-base;
+      color: $color-text-light;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

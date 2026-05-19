@@ -1,0 +1,37 @@
+current directory: /Users/Gavin/Desktop/labor-yimby/vendor/bundle/ruby/3.0.0/gems/json-2.19.5/ext/json/ext/parser
+/Users/Gavin/.rvm/rubies/ruby-3.0.1/bin/ruby -I /Users/Gavin/.rvm/rubies/ruby-3.0.1/lib/ruby/3.0.0 -r ./siteconf20260518-24547-stoflb.rb extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... no
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for RUBY_TYPED_EMBEDDABLE in ruby.h... no
+checking for whether -std=c99 is accepted as CFLAGS... no
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: /Users/Gavin/Desktop/labor-yimby/vendor/bundle/ruby/3.0.0/gems/json-2.19.5/ext/json/ext/parser
+make DESTDIR\= clean
+
+current directory: /Users/Gavin/Desktop/labor-yimby/vendor/bundle/ruby/3.0.0/gems/json-2.19.5/ext/json/ext/parser
+make DESTDIR\=
+compiling parser.c
+In file included from parser.c:1:
+In file included from ./../json.h:4:
+In file included from /Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby.h:38:
+In file included from /Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby/ruby.h:25:
+In file included from /Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby/internal/arithmetic.h:23:
+In file included from /Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby/internal/arithmetic/char.h:29:
+/Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby/internal/core/rstring.h:132:24: warning: default initialization of an object of type 'struct RString' with const member leaves the object uninitialized [-Wdefault-const-init-field-unsafe]
+  132 |         struct RString retval;
+      |                        ^
+/Users/Gavin/.rvm/rubies/ruby-3.0.1/include/ruby-3.0.0/ruby/internal/core/rbasic.h:49:17: note: member 'klass' declared 'const' here
+   49 |     const VALUE klass;
+      |                 ^
+1 warning generated.
+linking shared-object json/ext/parser.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/Gavin/Desktop/labor-yimby/vendor/bundle/ruby/3.0.0/gems/json-2.19.5/ext/json/ext/parser
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 parser.bundle ./.gem.20260518-24547-p1wp15/json/ext

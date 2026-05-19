@@ -1,0 +1,137 @@
+.blog-index {
+  padding: $spacing-2xl 0 $spacing-xl;
+  margin-top: 68px;
+
+  .container {
+    max-width: $container-narrow;
+  }
+
+  h1 {
+    margin-bottom: $spacing-xs;
+  }
+
+  .intro {
+    font-size: $font-size-lg;
+    color: $color-text-light;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list-item {
+  padding: $spacing-md 0;
+  border-bottom: 1px solid $color-border;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      .post-list-title {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .post-list-date {
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    margin-bottom: $spacing-xs;
+  }
+
+  .post-list-title {
+    font-size: $font-size-2xl;
+    font-weight: 700;
+    color: $color-secondary;
+    margin-bottom: $spacing-xs;
+    transition: color $transition;
+  }
+
+  .post-list-excerpt {
+    font-size: $font-size-base;
+    color: $color-text-light;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+.blog-post {
+  padding: $spacing-2xl 0 $spacing-xl;
+  margin-top: 68px;
+
+  .container {
+    max-width: $container-narrow;
+  }
+
+  .post-header {
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-md;
+    border-bottom: 1px solid $color-border;
+  }
+
+  .post-date {
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: $spacing-xs;
+  }
+
+  .post-author {
+    font-size: $font-size-base;
+    color: $color-text-light;
+    margin-top: $spacing-xs;
+  }
+
+  .post-content {
+    h1 { font-size: $font-size-3xl; }
+    h2 { font-size: $font-size-2xl; margin-top: $spacing-lg; }
+    h3 { font-size: $font-size-xl; margin-top: $spacing-md; }
+
+    p, li {
+      font-size: $font-size-lg;
+      line-height: 1.8;
+      color: lighten($color-text, 5%);
+    }
+
+    ul, ol {
+      margin-bottom: $spacing-sm;
+    }
+
+    li {
+      margin-bottom: $spacing-xs;
+    }
+
+    blockquote {
+      margin: $spacing-md 0;
+      padding: $spacing-md $spacing-lg;
+      background: $color-bg-alt;
+      border-left: 4px solid $color-primary;
+      border-radius: 0 $radius-sm $radius-sm 0;
+
+      p {
+        margin: 0;
+        font-style: italic;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: $radius-md;
+      margin: $spacing-md 0;
+    }
+  }
+}
