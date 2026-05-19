@@ -39,8 +39,7 @@ layout: default
         <div class="contact-card">
           <h3>Social</h3>
           <p>
-            <a href="https://twitter.com/LaborYIMBY" target="_blank" rel="noopener">Twitter / X</a><br>
-            <a href="https://facebook.com/LaborYIMBY" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.facebook.com/people/Labor-YIMBY/61589764125927/" target="_blank" rel="noopener">Facebook</a>
           </p>
         </div>
       </div>

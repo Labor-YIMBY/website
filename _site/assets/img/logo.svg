@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <rect width="400" height="400" rx="40" fill="#FAFAFA"/>
-  <path d="M200 60 L90 210 L140 210 L140 280 L260 280 L260 210 L310 210 Z" fill="#E1393D"/>
-  <text x="200" y="345" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="#1C1C28" letter-spacing="4">LABOR</text>
-  <text x="200" y="380" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="36" fill="#E1393D" letter-spacing="6">YIMBY</text>
-</svg>
