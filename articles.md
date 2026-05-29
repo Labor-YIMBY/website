@@ -17,3 +17,5 @@ permalink: /articles/
     </li>
   {% endfor %}
 </ul>
+
+<p class="rss-subscribe"><a href="{{ "/articles/feed.rss" | relative_url }}"><img src="{{ "/assets/img/rss.svg" | relative_url }}" width="32" height="32" alt="RSS"></a></p>

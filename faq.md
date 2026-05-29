@@ -1,5 +1,6 @@
 ---
 title: FAQ
+permalink: /faq/
 ---
 
 ## What is Labor YIMBY?

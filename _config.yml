@@ -1,39 +1,34 @@
-title: Labor YIMBY
-email: hello@laboryimby.org.au
-description: >-
-  A non-factional, non-affiliated advocacy group within the Australian
-  Labor Party fighting for housing abundance.
-baseurl: ""
-url: "https://laboryimby.org.au"
-twitter_username: LaborYIMBY
-facebook_username:  LaborYIMBY
+timezone: Australia/Melbourne
 
-markdown: kramdown
-theme: null
+permalink: /:title
 
+collections:
+  posts:
+    output: true
+    permalink: /articles/:title
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-coffeescript
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+# SCSS
 sass:
-  sass_dir: _sass
   style: compressed
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-permalink: /:title/
-
-include:
-  - .htaccess
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor/
+# SEO
+title: Labor YIMBY
+tagline: Portfolio
+description: A non-factional, non-affiliated advocacy group within the Australian Labor Party fighting for housing abundance.
+logo: /assets/img/logo.svg
+locale: en-AU

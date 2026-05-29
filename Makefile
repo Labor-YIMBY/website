@@ -1,13 +1,6 @@
-.PHONY: build serve clean
-
-SHELL = /bin/bash
-RVM = source ~/.rvm/scripts/rvm && rvm use 3.0.1
-
 build:
-	$(RVM) && jekyll build
-
-serve:
-	$(RVM) && jekyll serve --livereload
-
-clean:
-	rm -rf _site .jekyll-metadata
+	@docker run --rm -v "$$PWD:/srv/jekyll" -p 8080:8080 -it jekyll/jekyll:latest /bin/sh -c " \
+		rm -f Gemfile.lock; \
+		bundle install; \
+		bundle exec jekyll serve -H 0.0.0.0 -P 8080 \
+	"
