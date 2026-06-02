@@ -1,6 +1,7 @@
 ---
 title: Become a Member
 layout: default
+permalink: /join/
 ---
 
 <section class="contact-section">
