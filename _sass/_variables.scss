@@ -1,16 +1,23 @@
-// Colors
-$color-primary: #E1393D;
-$color-primary-dark: #C62828;
-$color-primary-light: #FF6F61;
-$color-secondary: #1C1C28;
-$color-accent: #F5A623;
-$color-bg: #FAFAFA;
-$color-bg-alt: #F0F2F5;
-$color-text: #1C1C28;
-$color-text-light: #6B7280;
-$color-border: #E5E7EB;
+// Colors (official palette)
+$color-primary: #FF3E4F;      // Base
+$color-primary-dark: #80000B; // color-700
+$color-primary-light: #FF808B; // color-200
+$color-secondary: #1F2937;    // Dark
+$color-accent: #FFB3B9;       // color-100
+$color-bg: #FFFFFF;           // White
+$color-bg-alt: #FFB3B9;       // color-100
+$color-text: #1F2937;         // Dark
+$color-text-light: rgba($color-secondary, 0.65);
+$color-border: rgba($color-secondary, 0.15);
 $color-white: #FFFFFF;
-$color-success: #10B981;
+
+// Palette scale (official)
+$color-700: #80000B;
+$color-600: #B30010;
+$color-500: #E60014;
+$color-300: #FF4D5C;
+$color-200: #FF808B;
+$color-100: #FFB3B9;
 
 // Typography
 $font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

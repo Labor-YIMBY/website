@@ -25,26 +25,15 @@
 .site-logo {
   display: flex;
   align-items: center;
-  gap: $spacing-xs;
-  color: $color-secondary;
   text-decoration: none;
-  font-size: $font-size-xl;
-  font-weight: 500;
 
-  .logo-icon {
-    color: $color-primary;
-    font-size: 1.4rem;
-    line-height: 1;
-  }
-
-  .logo-text {
-    strong {
-      font-weight: 700;
-    }
+  img {
+    height: 2.2rem;
+    width: auto;
   }
 
   &:hover {
-    color: $color-secondary;
+    opacity: 0.85;
   }
 }
 

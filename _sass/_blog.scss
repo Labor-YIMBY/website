@@ -24,16 +24,10 @@
 }
 
 .post-list-item {
-  padding: $spacing-md 0;
-  border-bottom: 1px solid $color-border;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+  border: 2px solid $color-secondary;
+  border-radius: $radius-md;
 
   a {
     text-decoration: none;

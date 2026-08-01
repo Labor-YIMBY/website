@@ -1,21 +1,25 @@
 ---
 title: Articles
-layout: page
+layout: default
 permalink: /articles/
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li class="post-list-item">
-      <a href="{{ post.url | relative_url }}">
-        <h2 class="post-list-title">{{ post.title }}</h2>
-        <p class="post-list-date">{{ post.date | date: "%d %B %Y" }}</p>
-        {% if post.excerpt %}
-          <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-        {% endif %}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-<p class="rss-subscribe"><a href="{{ "/articles/feed.rss" | relative_url }}"><img src="{{ "/assets/img/rss.svg" | relative_url }}" width="32" height="32" alt="RSS"></a></p>
+<article class="blog-index">
+  <div class="container">
+    <h1>Articles</h1>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li class="post-list-item">
+          <a href="{{ post.url | relative_url }}">
+            <h2 class="post-list-title">{{ post.title }}</h2>
+            <p class="post-list-date">{{ post.date | date: "%d %B %Y" }}</p>
+            {% if post.excerpt %}
+              <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="rss-subscribe"><a href="{{ "/articles/feed.rss" | relative_url }}"><img src="{{ "/assets/img/rss.svg" | relative_url }}" width="32" height="32" alt="RSS"></a></p>
+  </div>
+</article>
