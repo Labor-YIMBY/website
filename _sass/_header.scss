@@ -4,11 +4,20 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba($color-white, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid $color-border;
   transition: box-shadow $transition;
+
+  // Frosted-glass background on its own layer so the logo/nav aren't
+  // rasterized through the blur (which made the SVG logo look soft/blurry)
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba($color-white, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+  }
 
   &.scrolled {
     box-shadow: $shadow-sm;
