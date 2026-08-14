@@ -6,7 +6,7 @@ excerpt: Urban university campuses compete with housing for valuable land. Shift
 tags: [housing, universities, regional, victoria, supply]
 ---
 
-# Beyond the Cities: How Regional Universities Could Ease Australia's Housing Pressure
+
 
 In major Australian cities, a lot of our valuable urban land is taken up by enormous university campuses. Unlike comparable countries, Australia concentrates a large share of its students into a small number of very large institutions, meaning existing campuses face continual pressure to expand. When this growth occurs in urban areas, it competes with housing development and adds further demand to already constrained suburbs. Several universities have already established themselves successfully in regional Victoria, where land is abundant and there are unequal opportunities and demographic challenges. To ease housing pressure while revitalising regional economies, states should consider shifting future university growth beyond major cities, encouraging new institutions to emerge regionally and existing universities to establish larger campuses in regional cities.
 
