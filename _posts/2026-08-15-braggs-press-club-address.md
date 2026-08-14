@@ -9,7 +9,6 @@ tags: [housing, policy, tax, Australia]
 # Bragg’s Press Club Address - What He Got Right and Where He Lost the Plot
 
 Bragg’s Press Club Address: What He Got Right, and Where He Lost the Plot
-13/08/2026
 
 Andrew Bragg’s McCarthy-esque National Press Club Address has reinforced the salience and urgency of the housing crisis in Australia. In a provocative speech that accused Labor of promoting communism, and the custodians of Liberalism as being indolent, the Shadow Minister for Housing had a lot to say, and while not all of the details stacked up, he’s on the right track.
 
